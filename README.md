@@ -84,4 +84,9 @@ Therefore the values would be
 1. **Compile the design:**
 ```bash
 iverilog -o uart_sim uart_top.v transmitter.v receiver.v BaudRateGenerator.v
+```
+2. **Waveform Simulation:**
+```bash
+gtkwave uart_simulation.vcd
+```
 
