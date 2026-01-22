@@ -20,6 +20,7 @@ This project implements a complete UART communication system with separate trans
 
 ### 1. `uart_top`
 Top-level module that instantiates and connects all submodules.
+![TOP](TOP.png)
 
 **Ports:**
 - `clk`: System clock input
@@ -32,6 +33,8 @@ Top-level module that instantiates and connects all submodules.
 - `tx_active`: Transmitter busy flag
 - `rx_ready`: Data ready flag
 - `rdy_clr`: Ready clear acknowledgment
+![UART Waveform](Diag.png)
+
 
 ### 2. `transmitter`
 Handles serial data transmission using a 4-state FSM.
